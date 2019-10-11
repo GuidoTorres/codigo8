@@ -1,0 +1,26 @@
+header{
+
+    border: 1px solid #cccccc;
+    width: 50%;
+
+}
+
+div{
+
+    border: 1px solid brown;
+    width: 50%;
+
+}
+section{
+
+    font-size: 20px;
+}
+
+section p{
+
+    /* Em es el tamaño de fuente del directo tamaño 
+    del padre. em x 16px que es la fuente x defecto */
+    font-size: 2rem;
+/* Tamaño de fuente no respta a elementos padres.
+REm siempre del body */
+}

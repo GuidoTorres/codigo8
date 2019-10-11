@@ -1,0 +1,33 @@
+body {
+
+    
+
+    background: #0B486B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F56217, #0B486B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F56217, #0B486B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+
+input[type="text"], [type="email"] {
+  width: 100%;
+
+  color: aquamarine;
+  background: transparent;
+
+  border-bottom: 2px solid #000000;
+}
+
+input,
+textarea {
+    outline: none;
+  border-radius: 10px;
+  border: 0px;
+}
+
+input[type="submit"] {
+  width: 100%;
+}

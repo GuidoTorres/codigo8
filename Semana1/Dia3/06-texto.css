@@ -1,0 +1,90 @@
+.text-align {
+  text-align: justify;
+}
+
+.text-align-last {
+  text-align-last: right;
+}
+
+.letter_spacing {
+  letter-spacing: 3px;
+}
+
+.word_spacing {
+  word-spacing: 15px;
+}
+
+.line_height {
+  line-height: 30px;
+}
+
+img {
+  vertical-align: middle;
+}
+
+thead > tr > th {
+  color: red;
+}
+
+h1 {
+  color: green;
+}
+
+tr > td > code {
+  color: violet;
+}
+
+table {
+}
+
+.c_parrafo {
+  /* dashed line punteada - solid linea solida - none ninguna */
+  border: 1px dashed #773636;
+  width: 50%;
+  height: 70px;
+  overflow: scroll;
+  overflow-y: hidden;
+}
+
+.c-pborder {
+  border: 1px solid blue;
+}
+
+.c_width {
+  width: 50%;
+}
+
+.c_height {
+  height: 20px;
+}
+
+.c-overflow {
+  overflow: auto;
+}
+
+.c_overflowx {
+  overflow-x: hidden;
+  
+}
+
+.c_overflowy{
+
+width: 30%;
+height: 60%;;
+overflow-y: hidden ;
+overflow: scroll;
+
+}
+
+.c_ejercicio{
+
+  width: 50%;
+
+  background-color: #cc05d4;
+  height: 50px;
+    font-size: 20px;
+    border: 1px dashed #8dda98;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    overflow-y: scroll;
+}

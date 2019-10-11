@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+}
+
+header {
+  margin-top: 3px;
+  padding: 15px;
+  border: 1px solid blue;
+  text-align: center;
+}
+
+#lineales {
+  background: -webkit-linear-gradient(top right, #34f523, #6756ab, red);
+}
+
+#circulares {
+  background: -webkit-repeating-radial-gradient(center, black, white);
+}
+
+p {
+  filter: blur(1px);
+}
+
+img{
+/* Desde 0.1 hasta 1 como maximo. */
+    height: 150px;
+    filter: grayscale(0.1);
+    filter: sepia(1);
+    filter: invert(1);
+     /* 0.1 al 10 */
+   filter: brightness(s5);
+    filter:contrast(5);
+
+    transform: scale(2,1);
+
+    transform: rotate(70deg);
+    transform: skew(-35deg);
+    transform: translate(100px, 100px);
+
+    /* transfrom: translate(100px, 100px) rotate(90deg) */
+}
+
+div p{
+
+    transform: rotate(90deg);
+
+}
+
+/* Hover cuando se mantiene el maouse encima  */
+img:hover{
+
+    transform: translate(100px, 100px) rotate(-90deg)
+
+    
+}

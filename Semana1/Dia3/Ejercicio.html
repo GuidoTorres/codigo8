@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./Ejercicio.css">
+    <meta charset="UTF-8">
+    <title>Fomulario</title>
+</head>
+<body>
+    
+        <div>
+            
+          <table border="2">
+                <h1>Formulario con CSS</h1>
+            <tr>
+              <td>
+                <label>Nombre</label></td>
+                <td><input type="text" /></td>
+              
+            </tr>
+          
+        </div>
+        
+            <tr><td>
+        <label>Apellido Paterno</label></td>
+        <td><input type="text" /></td>
+    </tr>
+        
+        <br />
+        <tr><td>
+        <label>Apellido Materno</label></td>
+        <td><input type="text" /></td>
+    </tr>
+        <br />
+        <tr><td>
+        <label>DNI</label></td>
+        <td><input type="number" maxlength="8" minlength="8" /></td>
+    </tr>
+    <br>
+    <tr><td>
+        <label>Correo Electronico</label></td>
+        <td><input type="email" required /></td>
+    </tr>
+        <tr><td><label>Telefono</label></td>
+        <td><input type="number" required /></td>
+    </tr>
+    <tr><td>
+        <label>Cuidad</label></td>
+       <td> <select>
+          <option value="">Arequipa</option>
+          <option value="">Puno</option>
+          <option value="">Lima</option>
+          <option value="">Moquegua</option>
+          <option value="">Tacna</option>
+        </select>
+    </td>
+    </tr>
+    <tr>
+        <td><label>Estado Civil</label></td>
+        <td>
+        <input type="radio" name="Estado Civil" />Soltero
+        <input type="radio" name="Estado Civil" />Casado
+        <input type="radio" name="Estado Civil" />Divorciado
+    </td>
+    </tr>
+    <tr>
+        <td><label for="">Mensaje</label></td>
+        <td><textarea cols="30" rows="10"></textarea></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+        <input type="submit" />
+    </td>
+    </tr>
+    </table>
+      </body>
+</html>

@@ -1,0 +1,55 @@
+/* Configuracion inical o funcion de reset */
+*{
+
+    margin: 0;
+}
+
+html, body{
+
+    height: 100%;
+}
+/* --------------------------------------- */
+
+body {
+  background-color: 
+  white;
+}
+
+header {
+  background-color: aqua;
+}
+
+section{
+
+    height: 700px;
+    background-color: beige;
+    background-image: url('./../Dia1/imagenes/bootstrap.png');
+    
+    /* Background repeat-x se repite horizontalmente */
+    /* Background repeat-y se repite verticalmente */
+    background-repeat: no-repeat;
+    
+    background-size:200px;
+    background-position: center;
+    
+}
+.c-section{
+
+    background-image: url('./img/textura.png');
+    height: 400px;
+    background-size: 100%;
+    
+
+
+}
+
+.clase3{
+    height: 700px;
+    background-image: url('./img/wallpaer.PNG');
+    background-size: 100%;
+    background-attachment: fixed;
+}
+.clase4{
+
+    height: 1000px;
+}

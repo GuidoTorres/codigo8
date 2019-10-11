@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+header {
+    height: 13%;
+    display: flex;
+    background-color: #100E17;
+    display: flex;
+
+}
+
+.naranja {
+    color: orangered;
+}
+
+.logo {
+    flex: 2;
+    display: flex;
+    padding: 0 1rem;
+    justify-content: center;
+    align-items: center;
+    order: 1;
+}
+
+.logo i{
+    margin-right: 10px;
+}
+.title{
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+}
+
+.navegador {
+    flex: 13;
+    display: flex;
+    order: 2;
+}
+.navegador ul{
+    display: flex;
+    /* background-color: aliceblue; */
+    list-style: none;
+    flex: 1;
+    order: 3;
+}
+.navegador ul li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.buscador{
+    flex: 3;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    order: 3;    
+
+
+}
+.blanco{
+    color: #ddd;
+}
+.texto-nav{
+    margin-top: 10px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.formulario-buscar{
+    display: flex;
+    
+}
+
+.formulario-buscar button{
+    background: linear-gradient(to right, #f12711, #f5af19); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-left: 0;
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    color: #ddd;
+    outline: none;
+}
+
+.formulario-buscar input{
+    background-color: #201C29;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top: 1px solid #eee;
+    border-left: 1px solid #eee;
+    border-right: 0;
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    color: #ddd;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 0px 20px;
+}
+
+
+
+cabecera{
+    background-color: #100E17;
+    height: 10%;
+    display: flex;
+}
+
+
+.titulo h1{
+
+    margin-top: -50px;;
+
+    color: white;
+    margin-left: 80px;
+}
+
+.botones{
+
+    width: 1200px;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 80px;
+    justify-content: center;
+    
+
+}
+
+.botones i{
+
+    margin-left: 90px;
+}
+
+.busq
+{
+
+    margin-top: 20px;
+    background-color: #100E17;;
+
+    margin-left: 20px;
+    height: 50px;
+    width: 290px;
+    border-radius: 50px;
+    border: 2px solid white;
+
+
+}
+
+main{
+
+    height: 60%;
+    width: 100%;
+    background-image: url(./../img/sunset.PNG);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 2px;
+}
+
+img{
+    margin-top: 30px;
+    margin-left: 30px;
+    size: 20px;
+}
+
+
+
+main h1{
+
+    padding-top: 100px;
+    padding-left: 200px;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text2{
+
+    padding-top: 100px;
+    padding-left: 200px;
+    font-size: 20px;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 550px;
+
+
+}
+
+.cuadro{
+
+    background-color: #201C29;
+
+    margin-left: 200px;
+    width: 600px;
+    height: 200px;
+    border-radius: 30px;
+}
+
+.p1{
+
+    font-size: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+    
+}
+
+.p2{
+
+    font-size: 20px;
+    padding-top: 5px;
+    padding-left: 20px;
+    font-weight: bold;
+
+    
+}
+
+.p3{
+
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+    width: 400px;
+
+    
+}
+
+.im1{
+
+    margin-top: -200px;
+    margin-left: 430px;
+}
+
+.ul{
+    list-style: none;
+    display: inline-block;
+    
+}
+.ul li{
+
+    display: inline-block;
+}
+
+
+@media (max-width:1280px){
+
+
+.buscador input{
+
+    display: none;
+}
+
+.title{
+
+    font-size: 15px;
+}
+    
+
+
+   
+
+
+}
+
+@media (max-width:720px){
+
+
+    .cuadro{
+        display: none;
+    }
+
+   
+
+    
+    .titulo h1{
+
+        size: 100%;
+        flex-wrap: wrap;
+
+        
+    }
+
+    .main {
+
+        margin: 0;
+
+    }
+    
+    header{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .navegador ul{
+        flex-direction: column;
+        margin-left: -40px;
+    }
+
+    .navegador span{ 
+
+        margin-top: -30px;
+        margin-left: 100px;
+    }
+
+    .buscador{
+
+        
+        order: 1;
+        
+
+
+    }
+
+ 
+    main div{
+
+        margin-left: -50px;
+    }
+
+}
+

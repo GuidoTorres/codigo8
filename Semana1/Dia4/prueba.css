@@ -1,0 +1,68 @@
+
+
+.imagen{
+
+    height: 100px;
+    width: 80px;
+    
+    
+    background-size: 40px;
+margin-left: 20%;
+    background-repeat: no-repeat;
+
+    background-image: url(./img/2.png);
+
+    border: 1px solid black;
+    
+
+}
+
+.imagen:hover {
+
+
+    background-color: black;
+}
+
+
+
+.etiqueta:hover{
+
+    color: aquamarine;
+
+}
+
+
+.titulo{
+
+    height: 20px;
+    width: 80px;
+    border: 1px solid black;
+    margin-left: 20%;
+
+
+
+}
+
+.imagen:hover{
+
+    transform: rotate(90deg);
+    /* transition-duration: 500ms; */
+    
+ 
+
+}
+.imagen{
+
+    transition: transform 10000ms;
+    transition-timing-function: ease-in;
+
+}
+
+
+
+label{
+
+    margin-left: 12%;
+
+    
+}

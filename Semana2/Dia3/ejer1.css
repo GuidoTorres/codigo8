@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+}
+
+body, html{
+
+    height: 100%;
+
+}
+.contenedor{
+
+    height: 380px;
+    width: 700px;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    margin-left: 500px;
+    background-color: #1B0088;
+    margin-top: -322px;
+
+
+
+}
+
+.container0{
+
+    height: 320px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 299px;
+
+    box-shadow: 0px 1px 3px 0px ;
+
+
+
+
+
+}
+.container0 i{
+
+    height: 10px;
+    width: 20px;
+}
+
+.container1 h1{
+
+    font-family: 'Oswald', sans-serif;
+}
+
+.container0 h1{
+
+    color: black;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-left: 15px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.container0 h1{
+
+    size: 30px;
+}
+
+
+
+.fondo{
+
+
+    height: 500px;
+    width: 500px;
+    border: 1px solid;
+    
+
+
+ 
+
+}
+
+.part1{
+    height: 50px;
+
+
+    margin-top: 30px;
+    background-color: #1B0088;
+
+
+    
+}
+
+h1{
+
+    color: white;
+    font-size: 12px;
+}
+
+.part2{
+
+    height: 50px;
+    background-color: #1B0088;
+
+}
+
+.part3{
+
+    height: 50px;
+    background-color: #1B0088;
+
+}
+
+.part4{
+
+    height: 50px;
+    background-color: #1B0088;
+
+}
+
+.part5{
+
+    
+}
+
+.boton{
+
+    background-color: #ED1650;
+    color: white;
+    outline: 0;
+    border-style: hidden;
+    border-radius: 2px;
+    margin-left: 70px;
+    height: 50px;
+    width: 300px;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.input1{
+
+    height: 30px;
+    width: 15px;
+}
+
+.span1{
+
+    color: white;
+    padding-left: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+.span2{
+
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.input01{
+
+    height: 30px;
+    width: 200px;
+
+
+}
+
+.input02{
+
+    height: 30px;
+    width: 200px;
+    margin-left: 20px;
+
+}
+
+.input1{
+
+}
+
+.input3{
+    height: 30px;
+    width: 200px;
+
+
+}
+
+.input4{
+    height: 30px;
+    width: 200px;
+    margin-left: 20px;
+
+
+
+}
+
+.input5{
+    height: 30px;
+    width: 200px;
+
+
+}
+
+.input6{
+    height: 30px;
+    width: 200px;
+    margin-left: 20px;
+
+
+
+}
+
+.input7{
+    height: 30px;
+    width: 200px;
+
+
+}
+
+.reserva:hover{
+
+    background-color: #1B0088;
+    color: aliceblue;
+}
+
+.banner{
+
+    height: 100px;
+    width: 900px;
+    border: 1px solid;
+    margin-left: 300px;
+    border-radius: 10px;
+    background-color: #F7F7F7;
+}
+
+.banner h1{
+
+    color: #1B0088;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+.banner h2{
+
+    color: #1B0088;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+
+
+}
+
+.banner input[type= submit]{
+
+    margin-left: 30px;
+    height: 30px;
+    background-color: #1B0088;
+    color: white;
+    outline: none;
+    border: 0;
+}
+
+
+
+
+
+
+
+

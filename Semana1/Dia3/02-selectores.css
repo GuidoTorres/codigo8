@@ -1,0 +1,36 @@
+/* Selector de etiquetas  */
+
+h2 {
+  color: #a52a2a;
+  font-family: Arial, sans-serif;
+}
+
+section {
+  color: blue;
+}
+
+p {
+  color: green;
+}
+
+article {
+  color: violet;
+}
+
+/* Selectores de clase */
+/* Todos los elementos que tengan la clase mapa */
+.mapa{
+
+    color: aquamarine;
+
+}
+
+
+/* Selectores de ID */
+
+#contacto{
+
+    background-color: brown;
+
+
+}

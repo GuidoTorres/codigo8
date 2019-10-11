@@ -1,0 +1,71 @@
+/* Static no se puede modificar su posicion */
+/*   */
+/*  */
+/*  */
+
+* {
+  margin: 0;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+span{
+    border: 1px solid brown;
+    width: 30px;
+    height: 30px;
+}
+
+.seccion1 {
+  border: 1px solid red;
+  height: 2000px;
+  position: relative;
+}
+
+.articulo1 {
+  border: 1px solid blue;
+  height: 100px;
+  width: 100px;
+  position: relative;;
+  /*Calc operaciones con medidas diferentes */
+  left: calc(50% - 50px);
+
+  /* Otra forma de poner al medio */
+  /* left: 50%;
+  transform: translate(-50%, 0px); */
+}
+
+.articulo2 {
+  border: 1px solid rgb(85, 175, 85);
+  height: 100px;
+  width: 100px;
+  /* Absoluto se ubica de acuerod al proximo contenedor padre que tenga posicionamiento relativo */
+/* Si ninguno de sus padres tiene posicionamiento relativo se ubicara en relacion al body.  */
+  position: absolute;
+  bottom: 0px;
+}
+
+.articulo3 {
+    border: 1px solid rgb(56, 54, 54);
+    height: 100px;
+    width: 100px;
+    /* Posicionamiento absoluto con la diferencia que siempre su punto 
+    de referencia es el body */
+
+    
+  }
+
+  .articulo4 {
+    border: 1px solid orange;
+    height: 100px;
+    width: 100px;
+    /* Posicionamiento absoluto con la diferencia 
+    que siempre su punto de referencia es el viewport o la parte visible de la pagina */
+    
+    position: fixed;
+    bottom: 30px;
+    right: 30px;;
+    
+  }

@@ -1,0 +1,72 @@
+/* La como sirve para separar las diferentes etiquetas  */
+
+li,
+a {
+  color: maroon;
+}
+
+/* Todos los h2 que sean hijos a cualquier nivel de un elemento section. */
+section h2 {
+  color: blue;
+}
+
+/* Signo > significa hijos directos de un elemento section */
+section > h2,
+.contacto {
+  color: red;
+}
+
+/* Todos los labels hijos en primer nivel de un form */
+
+form > label {
+  color: green;
+  border: 2.5px solid red;
+}
+
+#form2 > label {
+  border: 2.5px solid blue;
+}
+
+#form2>label>span {
+  border: 15px solid greenyellow;
+}
+
+.grande{
+
+    
+
+    font-size: 30px;
+
+}
+
+/* Todod los h1 q tengan la clase grande */
+h1.grande{
+
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+h2.grande{
+
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Selectores de eitquetas con atributos */
+
+/* Todos los parrafos que tengan el atributo name */
+
+p[name]{
+    background-color: chocolate;
+}
+
+p[name= "parrafo2"]{
+
+    background-color: blueviolet;
+
+}
+
+input[type= "email"]{
+
+    color: brown;
+
+}

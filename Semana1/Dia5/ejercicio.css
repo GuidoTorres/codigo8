@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+
+}
+
+html, body{
+
+    height: 100%;
+    width: 100%;
+
+    }
+    @font-face{
+
+        font-family: 'gotham';
+        src: url(./font/Gotham-Bold.otf);
+    }
+    
+    #navegador{
+        font-family: 'gotham';
+
+    
+    }
+    
+    #busqueda{
+        display: inline-block;
+        margin-left: 25%; 
+    }
+    
+    #registro{
+        display: inline-block;
+        margin-left: 25%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 10px;
+        border-radius: 5em;
+        background-color: #00A082;
+        color: white;
+        box-shadow: black 1px 1px 1px;
+        font-size: 10px;
+        
+    }
+    
+    #iniciar{
+        display: inline-block;
+        margin-left: 2%; 
+        padding: 10px;
+        border-radius: 5em;
+        background-color: white;
+        box-shadow: black 1px 1px 1px;
+        font-size: 10px;
+
+    
+    }
+    #iniciar:hover{
+        filter: opacity(0.6)
+        
+    
+    }
+    
+    #registro:hover{
+        filter: opacity(0.6)
+        
+    }
+    
+    #busqueda:hover{
+        filter: opacity(0.6)
+    }
+    
+    .img1{
+        clear: both;
+        position: absolute;
+        margin-top: 27px;
+        margin-left: 22%;
+        display: inline-block;
+        width: 30px;
+        height: 30px;;
+    }
+   
+    
+    
+
+.central{
+
+    background-color: #FFC244;
+    height: 100%;
+
+
+}
+
+.marca{
+
+
+    margin-top: 5%;
+ 
+     display: inline-block;
+     margin-left: 44%;
+     font-size: 40px;
+     font-family: 'gotham';
+
+}
+
+.mensaje1{
+
+    margin-top: 2%;
+    display: inline-block;
+    margin-left: 32%;
+    font-size: 2em;
+    font-family: 'gotham';
+    
+
+}
+
+.mensaje2{
+
+
+    margin-top: 2%;
+    display: inline-block;
+    margin-left: 32%;
+    font-size: 2em;
+    font-family: 'gotham';
+
+
+}
+
+
+.cuerpo{
+
+
+   
+
+
+    width: auto;
+
+    display: inline block;
+
+
+}
+
+.b1{
+
+    margin-left: 28%;
+    
+
+    display: inline-block;
+}
+
+.b1:hover{
+
+    transition: transform 700ms ease-in;
+    
+    transform: scale(1.1);
+    
+
+}
+
+.b2{
+
+    display: inline-block;
+}
+.b2:hover{
+
+    transform: scale(1.1);
+    transition: transform 700ms ease;
+
+}
+
+.b3{
+    display: inline-block;
+}
+.b3:hover{
+
+    transform: scale(1.1);
+    transition: transform 700ms ease;
+}
+
+.b4{
+    display: inline-block;
+
+}
+.b4:hover{
+
+    transform: scale(1.1);
+    transition: transform 700ms ease;
+}
+
+.b5{
+    display: inline-block;
+
+}
+
+.b5:hover{
+
+    transform: scale(1.1);
+    transition: transform 700ms ease;
+}
+.b6{
+
+    display: inline-block;
+
+
+}
+
+.b6:Hover{
+    transform: scale(1.1);
+    transition: transform 700ms ease;
+
+}
+
+.b7{
+
+    display: inline-block;
+
+}
+
+.b7:Hover{
+    transform: scale(1.1);
+    transition: transform 700ms ease;
+
+
+}
+
+
+

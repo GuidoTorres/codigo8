@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+}
+
+body, html{
+
+    height: 100%;
+}
+
+.container{
+
+
+border: 1px solid;
+    display: flex;
+    height: 500px;
+    width: 900px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title{
+    
+    size: 20px;
+}
+
+.nav{
+
+    border: 1px solid;
+
+    list-style: none;
+    align-self: flex-end;
+}
+

@@ -1,0 +1,356 @@
+*{
+    margin: 0%
+}
+
+html, body{
+
+    height: 100%;
+}
+
+.log{
+
+    position: relative;
+    left: 165px;
+    top: 10px;
+    height: 30px;}
+
+.logo{
+
+    position: relative;
+
+    top: -20px;
+    padding-left: 200px;
+    font-size: 18px;
+    color: #550FED;
+}
+
+.head0{
+
+    background-color: #FFFFFF;
+    height: 80px;
+}
+
+.head1{
+
+
+    float: right;
+    
+    height:30px;
+    width: 550px;
+    margin-top: -70px;
+    border-bottom-left-radius: 20px;
+    background-color: #EEEEEE;
+
+}
+
+.head2{
+
+    margin-left: 160px;
+    width: fit-content;
+    height: 60px;
+    margin-top: -35px;
+}
+
+
+.head1 li{
+    float: right;
+    padding-top: 12px;
+    
+    padding-right: 30px;
+    list-style: none;}
+
+.btn1{
+    background-image: url('./../img/btn1.PNG');
+    background-size: 50px 40px;
+    height: 40px;
+    width: 50px;
+    outline: none;
+    border: 0; 
+
+
+}
+
+.btn2{
+    background-image: url('./../img/btn2.PNG');
+    background-size: 50px 40px;
+    height: 40px;
+    width: 50px;
+    outline: none;
+    border: 0;
+}
+.btn3{
+    background-image: url('./../img/btn3.PNG');
+    background-size: 50px 40px;
+    height: 40px;
+    width: 50px;
+    outline: none;
+    border: 0;
+}
+.btn4{
+    background-image: url('./../img/btn4.PNG');
+    background-size: 50px 40px;
+    height: 40px;
+    width: 50px;
+    outline: none;
+    border: 0;
+}
+.btn5{
+    background-image: url('./../img/btn5.PNG');
+    background-size: 50px 40px;
+    height: 40px;
+    width: 50px;
+    outline: none;
+    border: 0;
+}
+.btn6{
+    background-image: url('./../img/btn6.PNG');
+    background-size: 50px 40px;
+    height: 40px;
+    width: 50px;
+    outline: none;
+    border: 0;
+}
+.btn7{
+    background-image: url('./../img/btn7.PNG');
+    background-size: 50px 40px;
+    height: 40px;
+    width: 50px;
+    outline: none;
+    border: 0;
+}
+.btn8{
+    background-image: url('./../img/btn8.PNG');
+    background-size: 50px 40px;
+    height: 40px;
+    width: 50px;
+    outline: none;
+    border: 0;
+}
+.btn9{
+    background-image: url('./../img/btn9.PNG');
+    background-size: 50px 40px;
+    height: 40px;
+    width: 50px;
+    outline: none;
+    border: 0;
+}
+.btn10{
+    background-image: url('./../img/btn10.PNG');
+    background-size: 50px 40px;
+    height: 40px;
+    width: 50px;
+    outline: none;
+    border: 0;
+}
+
+.fondo{
+
+    background-color: #DDD5F5;
+    height: 180px;
+}
+.alojamiento{
+    position: relative;
+    top: 15px;
+    left: 250px;;
+
+
+
+    height: 150px;
+    width: 800px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+
+    }
+
+.section1{
+
+    display: inline-block;
+    height: 60px;
+    position: relative;
+
+    
+}
+
+.section2{
+
+    display: inline-block;
+    height: 60px;
+    position: relative;
+    
+}
+
+.section3{
+
+    display: inline-block;
+    height: 60px;
+    position: relative;
+}
+
+.section4{
+    display: inline-block;
+    margin-left: 30px;
+    position: relative;
+}
+
+
+    .ch1{
+
+        padding-top: 10px;
+        padding-left: 10px;
+        font-size: 14px;
+        color: #666666;
+
+    }
+
+.etiq1{
+
+    display: inline-block;
+    font-size: 12px;
+    padding-left: 10px;
+    color: #666666;
+
+}
+
+.etiq2{
+
+    display: inline-block;
+    font-size: 12px;
+   padding-top: 20px;
+   color: #666666;
+
+}
+
+   .etiq3{
+
+    display: inline-block;
+    font-size: 12px;
+   padding-top: 20px;
+   color: #666666;
+}
+
+
+
+.input1{
+
+    border: 0.5px solid #CCCCCC;
+    display: block;
+    height: 30px;
+    width: 150px;
+    border-radius: 5px;
+    outline: none;
+    margin-left: 10px;
+}
+
+.input2{
+
+    border: 0.5px solid #CCCCCC;
+    height: 32px;
+    width: 150px;
+    border-radius: 5px;
+    outline: none;
+
+}
+
+.input3{
+
+    border: 0.5px solid #CCCCCC;
+    height: 30px;
+    width: 150px;
+    border-radius: 5px;
+    outline: none;
+
+}
+
+.boton1{
+
+    height: 35px;
+    width: 100px;
+    border-radius: 20px;
+    outline: none;
+    border: 0;
+    background-color: #560FEF;
+    color: #FFFFFF;
+}
+
+.ofertas{
+
+    font-size: 20px;
+    padding-top: 80px;
+    padding-left: 80px;
+
+
+
+
+
+
+
+    background-color: #EEEEEE;
+    height: 550px;
+}
+
+.titulofertas{
+
+    font-size: 20px;
+    color: #666666;
+}
+
+.img1{
+    display: inline-block;
+
+    height: 200px;
+    width: 500px;
+    
+
+    background-image: url('./../img/descuentos.PNG');
+    background-size: 500px 200px;
+    border-radius: 10px;
+
+}
+
+.img2{
+
+    display: inline-block;
+
+    height: 200px;
+    width: 250px;
+    
+
+    background-image: url('./../img/descto1.PNG');
+    background-size: 250px 200px;
+    border-radius: 10px;
+    margin-left: 25px;
+
+}
+
+.img3{
+
+    display: inline-block;
+
+    height: 200px;
+    width: 250px;
+    
+
+    background-image: url('./../img/descuento2.PNG');
+    background-size: 250px 200px;
+    border-radius: 10px;
+    margin-left: 25px;
+
+}
+
+.cuotas{
+
+    border: 1px solid;
+
+    background-image: url('./../img/cuotas.PNG');
+    height: 100px;
+    width: 1060px;
+
+    background-size: 1060px 100px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+
+    margin-top: 40px;
+     
+}
+
+

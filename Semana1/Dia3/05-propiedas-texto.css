@@ -1,0 +1,23 @@
+code {
+  color: brown;
+}
+
+.c-font-family {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.font-size {
+  font-size: 8px;
+}
+
+.font-weight {
+  font-weight: bold;
+}
+
+.font-style {
+  font-style: oblique;
+}
+
+.font {
+  font: oblique bold 20px verdana;
+}

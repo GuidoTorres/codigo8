@@ -1,0 +1,28 @@
+*{
+
+    margin: 0;
+}
+
+html, body{
+
+    height: 100%;
+}
+
+section{
+
+    background-color: beige;
+    overflow: auto;
+}
+
+section img{
+
+    float: left;
+    margin: 0 10px;
+}
+
+.clearfloat{
+    
+    clear: both;
+}
+
+

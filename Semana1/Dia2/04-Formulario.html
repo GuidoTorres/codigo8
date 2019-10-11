@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formularios</title>
+  </head>
+  <body>
+    <header>
+      <h1>Formulario</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Registro de usuario</h2>
+
+        <form>
+          <fieldset >
+            <legend>Datos Personales</legend>
+            <table>
+              <tr>
+                <td><label>Nombres:</label></td>
+                <td><input type="text" required minlength="3" tabindex="1" placeholder="Jorge"/></td>
+                <td><label>Apellidos:</label></td>
+                <td><input type="text" required /></td>
+                <td><label>Email:</label></td>
+                <td><input type="email" required /></td>
+              </tr>
+              <tr>
+                <td><label>Password:</label></td>
+                <td><input type="password" required tabindex="2"
+                    minlength="6"
+                    pattern="[A-Za-z]{3}" 
+                    /></td>
+
+                <td><label>Edad:</label></td>
+                <td><input type="number" required /></td>
+
+                <td><label>Nacimiento:</label></td>
+                <td><input type="Date" required /></td>
+              </tr>
+<!--Hidden sirve para ocultar un elemento-->
+<!--TabIndex sirve para saltar entre los elemenots del fieldset-->
+              <tr>
+                <td><input type="submit" value="Enviar Datos" /></td>
+              </tr>
+            </table>
+          </fieldset>
+          <fieldset>
+              <legend>Datos de la Entrevista</legend>
+              <table>
+                  <tr>
+                      <td><label>Hora de la entrevista:</label></td>
+                      <td><input type="time"></td>
+
+                      <td><label>Color Favorito</label></td>
+                      <td><input type="color" ></td>
+
+                      <td><label >Seleccionar CV</label></td>
+                      <td><input type="file"></td>
+                                   
+
+                    </tr>
+
+                    <tr>
+                        <td><label>Describenos quien eres: </label></td>
+                        <td><textarea cols="10" rows="10"></textarea></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Inidicanos tu sexo</label></td>
+                        <td><input type="radio" name="sexo"> Masculino</td>
+                        <td><input type="radio" name="sexo"> Femenino</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><label >Que dias puedes asistir</label></td>
+                        <td><input type="checkbox">Lunes</td>
+                        <td><input type="checkbox">Martes</td>
+                        <td><input type="checkbox">Miercoles</td>
+                        <td><input type="checkbox">Jueves</td>
+                        <td><input type="checkbox">Viernes</td>
+                        <td><input type="checkbox">Sabado</td>
+                        <td><input type="checkbox">Domingo</td>
+                    </tr>
+
+                    <tr>
+                        <td><label>En que distrito resides:</label></td>
+                        <td><select>
+                            <option value="1">Cercado</option>
+                            <option value="2">Miraflores</option>
+                            <option value="3">Jose Luis</option>
+                            <option value="4">Hunter</option>
+                            <option value="5">selva Alegre</option>
+                        </select></td>
+                    </tr>
+
+              </table>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

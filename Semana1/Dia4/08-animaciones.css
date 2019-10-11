@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #ffc98f;
+}
+
+
+
+@keyframes animacion {
+  0% {
+    background-color: #e8504f;
+  }
+
+  50% {
+    background-color: #ffa157;
+    transform: scale(0.8) translate(50px, 100px);
+  }
+
+  100% {
+    background-color: #e8504f;
+  }
+}
+
+
+.circulo {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border: 1px solid green;
+    border-radius: 50%;
+    animation: animacion;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
