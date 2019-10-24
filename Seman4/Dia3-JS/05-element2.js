@@ -14,6 +14,9 @@ parrafo.style.color= "blue";
 
 principal.appendChild(parrafo);
 
+//NOTA
+//Tambien existe la funcion prepend(), analoga a appendchild, inserta un nodo hijo, pero al inicio de todos sus hijos
+
 for(let i = 0; i<5; i++){
 
     let miParrafo = document.createElement("p");
@@ -100,5 +103,12 @@ else{
 }
 
 seccion.appendChild(parrafo)
+
+var cabecera = document.create("th")
+
+for (let index = 0; index < array.length; index++) {
+    const element = array[index];
+    
+}
 
 

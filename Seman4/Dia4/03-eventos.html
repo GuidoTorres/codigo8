@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./03-eventos-tema1.css" id="estilos">
+    <style>
+        *{
+
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            
+            height: 100%;
+        }
+
+        /*POSICIONAMIENTO*/
+
+        header{
+            height: 10%;
+        }
+        main{
+            display: flex;
+            height: 90%;
+        }
+
+        aside{
+            flex: 1;
+
+        }
+        section{
+
+            flex: 3;
+        }
+    </style>
+  </head>
+  <body>
+    <header>header</header>
+    <main>
+        <aside>aside</aside>
+        <section><button id="btnTema">CAMBIAR DE TEMA</button></section>
+    </main>
+    <script src="./03_eventos.js"></script>
+  </body>
+</html>
