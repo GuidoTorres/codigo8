@@ -30,6 +30,7 @@ let btnTema = document.getElementById("btnTema");
 
  btnTema.onclick = () => {
 
+    
     let link = document.getElementById("estilos");
     //Getattribute("atributo") => obtine el valor del atributo de un elemento
     if(link.getAttribute("href") ==" ./03-eventos-tema1.css"){

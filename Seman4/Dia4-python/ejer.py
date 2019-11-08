@@ -16,10 +16,10 @@ class Productos:
     def getProductos():
         return self.__fecha_caducidad, self.__nro_lote, self.__fecha_expiracion, self.__pais 
         
-    fecha_caducidad = property(getProductos,setProductos)
-    nro_lote = property(getProductos,setProductos)
-    fecha_expiracion = property(getProductos,setProductos)
-    pais = property(getProductos,setProductos)
+    # fecha_caducidad = property(getProductos,setProductos)
+    # nro_lote = property(getProductos,setProductos)
+    # fecha_expiracion = property(getProductos,setProductos)
+    prod = property(getProductos,setProductos)
 
 
 class Productos_frescos(Productos):
@@ -62,6 +62,9 @@ class Productos_refrigerados(Productos):
     def getProductos_refrigerados(self):
     
         return self.__cod_organismo, self.__fecha_envasado, self.__temperatura_recomendada, self.__pais
+    
+    
+    prodRefrigerados = property
 
 class Productos_congelados(Productos):
 

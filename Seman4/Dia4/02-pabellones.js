@@ -72,6 +72,7 @@ tabla.appendChild(tbody);
 
 let body = document.getElementById("miBody")
 
+
 body.prepend(tabla);
 
 

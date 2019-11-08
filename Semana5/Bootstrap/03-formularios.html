@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href=".//CSS/bootstrap.min.css" />
+    <style>
+      header {
+        height: 60px;
+        background-color: lightsteelblue;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="container-fluid"></header>
+    <main class="container-fluid mt-5">
+      <h3>Formularios</h3>
+      <section class="row justify-content-center">
+        <div class="col-md-4">
+          <form>
+            <div class="form-group ">
+              <label for="">Nombre</label>
+              <input
+                type="text"
+                class="form-control "
+                placeholder="Ingrese su nombre"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="">Apellido</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Ingrese su apellido"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="">Correo</label>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Ingrese su correo"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="">Ingrese su mensaje</label>
+              <textarea
+                class="form-control"
+                id=""
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <label for="">Elegir idioma</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <input type="checkbox" id="checkEspaniol" />
+                  </div>
+                </div>
+
+                <label class="form-control" for="checkEspaniol">Español</label>
+              </div>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <input type="checkbox" id="checkIngles" />
+                  </div>
+                </div>
+
+                <label class="form-control" for="checkIngles">Ingles</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+                    <label for="">Elegir Genero</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <input type="radio" id="" name="generom"/>
+                        </div>
+                      </div>
+      
+                      <label class="form-control" for="generom">Masculino</label>
+                    </div>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <input type="radio" id="" name="generof" />
+                        </div>
+                      </div>
+      
+                      <label class="form-control" for="generof" name="rgnero">Femenino</label>
+                    </div>
+                  </div>
+
+
+                  <div class="form-group">
+                      <label for="">Elija nacionalidad</label>
+                      <select name="" id="" class="form-control">
+                          <option value="0">Seleccione</option>
+                          <option value="1">Peruano</option>
+                          <option value="2">Chileno</option>
+                      </select>
+                  </div>
+
+                  <div class="form-group">
+                      <button type="submit" class="btn btn-primary">
+                          Registrar
+                      </button>
+                  </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="./Js/jquery.min.js"></script>
+    <script src="./Js/popper.min.js"></script>
+    <script src="./Js/bootstrap.min.js"></script>
+  </body>
+</html>
