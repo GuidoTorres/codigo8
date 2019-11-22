@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
+    <!-- FONT AWESOME 5 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+    <!-- FONT AWESOME 4 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
+      crossorigin="anonymous"
+    />
+    <!-- ANIMATE CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+      integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU="
+      crossorigin="anonymous"
+    />
+    <!-- BOOTSWATCH LUX -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/lux/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-hVpXlpdRmJ+uXGwD5W6HZMnR9ENcKVRn855pPbuI/mwPIEKAuKgTKgGksVGmlAvt"
+      crossorigin="anonymous"
+    />
+    <title></title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #mapa {
+          margin-left: 100px;
+        height: 25%;
+        width: 90%;
+      }
+
+      html,
+      body {
+        height: 100%;
+        
+
+      }
+      #formulario{
+
+          height: 10%;
+      }
+      #navegador{
+
+          height: 50px;
+      }
+      body{
+        background: #EB5757;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #000000, #EB5757);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #000000, #EB5757); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      }
+
+      #boton{
+          margin-left: 220px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-primary" id="navegador">
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        ></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item px-2">
+              <a class="nav-link" href="./scrum.html">Codigo <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="./scrum2.html">Movimiento</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Agregar Playa</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./modificarPlaya.html">Modificar Playa</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0"></form>
+        </div>
+      </nav>
+    </header>
+
+    <h3 class="row mt-3 ml-5" style="color: white;">Seleccione en el mapa la ubicacion de la playa</h1>
+
+    <div id="mapa" class="row mt-4"></div>
+
+    <main class="container-fluid mt-5" id="formulario">
+            <section class="row justify-content-center">
+              <div class="col-md-4">
+                <form>
+                  <div class="form-group ">
+                    <label for="">Direccion</label>
+                    <input
+                      type="text"
+                      class="form-control "
+                      placeholder="Ingrese direccion"
+                    />
+                  </div>
+      
+                  <div class="form-group">
+                    <label for="">Capacidad</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      placeholder="Ingrese capacidad"
+                    />
+                  </div>
+      
+                  <div class="form-group">
+                    <label for="">Precio Auto</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Precio Auto"
+                    />
+                  </div>
+      
+                  <div class="form-group">
+                    <label for="">Precio Moto</label>
+                    <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Precio Moto"
+                  />
+                </div>
+                  
+                  <div class="form-group">
+                    <label for="">Precio Camioneta</label>
+                    <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Precio Camioneta"/>
+                </div>  
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary" id="boton">
+                    Modificar Playa
+                    </button>
+                </div>
+                </form>
+              </div>
+            </section>
+          </main>
+
+    <!-- JQUERY -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- POPPER.JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <!-- BOOTSTRAP JS -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-Jj    SmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+      integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+      crossorigin=""
+    ></script>
+
+    <script src="main.js"></script>
+    <script>
+
+        var map1 = L.map('mapa').setView([-16.461161	,	-71.523819], 13);
+        
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map1);
+            
+    ;
+    
+        map1.on('click', function(e) {
+    
+        latitud = e.latlng.lat
+        longitud = e.latlng.lng
+    
+          L.marker([latitud	,	longitud]).addTo(map1)
+           .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+           .openPopup();
+
+    } );
+           </script>
+
+  </body>
+</html>
