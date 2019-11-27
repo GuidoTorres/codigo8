@@ -26,7 +26,7 @@ def autenticacion(username, password):
             # convierte a strings
             hashed = hashed.decode('utf-8')
             if hashed == resultado.usu_hash:
-                return Usuario(resultado.usu_id, resultado.usu_email)
+                return Usuario(resultado.usu_id, resultado.usu_mail)
         else:
             return None
     else:

@@ -1,3 +1,4 @@
+
 from flask import Flask
 from flask_restful import Api
 from base_de_Datos import bd
@@ -13,17 +14,31 @@ from controllers.usuario import usuarioController
 from controllers.localOpciones import localOpcionesController
 # from models.opcionesLocal import opcionesLocalModel
 from controllers.opcionesLocal import opcionesLocalController, opcionesLocalTodosController
-from models.precioCancha import precioCanchaModel
-from models.reserva import reservaModel
-from models.valoraciones import valoracionesModel
+# from models.precioCancha import precioCanchaModel
+from controllers.precioCancha import precioCanchaController
+# from models.reserva import reservaModel
+from controllers.reservas import ReservaController
+from controllers.valoraciones import valoracionController, valoracionesController
+# from models.valoraciones import valoracionesModel
+# LIBRERIAS PARA EL JWT
+from flask_jwt import JWT
+from seguridad import autenticacion, identificador
+from flask_cors import CORS
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI']="mysql://root:root@localhost/canchas"
+
+CORS(app)
+app.config['SQLALCHEMY_DATABASE_URI']="mysql://8a2BFSbBT0:oU5gAMj9il@remotemysql.com/8a2BFSbBT0"
+app.config['SECRET_KEY'] = 'clave-secreta'
+app.config['JWT_AUTH_URL_RULE']= '/usuario/login'
+from datetime import timedelta
+app.config['JWT_EXPIRATION_DELTA'] = timedelta(hours=1)
+jsonwebtoken = JWT(app, autenticacion, identificador)
 api = Api(app)
 
 @app.route('/')
 def inicio():
-    return 'La API REST ha escuchado tus suplicas! 😀'
+    return 'La API REST ha escuchado tus suplicas! 😀😱💩'
 
 @app.before_first_request
 def iniciar_bd():
@@ -48,9 +63,17 @@ api.add_resource(LocalController,
 '/local/buscar/<string:nombre>')
 
 api.add_resource(CanchitasController,'/cancha/traertodos')
+
+api.add_resource(precioCanchaController,
+'/precioCancha/crear',
+'/precioCancha/buscar/<int:id>',
+'/precioCancha/actualizar/<int:id>')
+
 api.add_resource(opcionesLocalController,
 '/opciones/buscar/<string:nombre>',
 '/opciones/agregar')
+
+api.add_resource(ReservaController, '/reserva/crear','/reserva/crear')
 
 api.add_resource(opcionesLocalTodosController,'/opciones/traertodos')
 api.add_resource(LocalesController,'/local/traertodos')
@@ -58,5 +81,7 @@ api.add_resource(LocalesController,'/local/traertodos')
 api.add_resource(localOpcionesController,'/localopciones/agregar')
 
 api.add_resource(usuarioController,'/usuario/crear')
+api.add_resource(valoracionController, '/valoracion/crear')
+api.add_resource(valoracionesController, '/valoracion/buscar/<int:id_local>')
 if __name__=="__main__":
     app.run(debug=True)
