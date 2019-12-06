@@ -1,0 +1,28 @@
+<main class="container mt-5">
+    <div class="row justify-content-center">
+        <form class="col-md-6">
+                <h2>Formulario</h2>
+            <div class="form-group">
+                <label>Nombre</label>
+                <input type="text" class="form-control" #nombre>
+            </div>
+            <div class="form-group">
+                <label>Correo</label>
+                <input type="email" class="form-control" #email>
+            </div>
+            <div class="form-group">
+                <label>Edad</label>
+                <input type="number" class="form-control" #edad>
+            </div>
+            <div class="form-group">
+                <label for="">Pais</label>
+                <select class="form-control" #pais>
+                    <option value="0">Seleccione</option>
+                </select>
+            </div>
+            <button class="btn btn-block btn-danger" type="button" (click)="formulario1(pais,edad,nombre,email)">
+                Registrar Datos
+            </button>
+        </form>
+    </div>
+</main>

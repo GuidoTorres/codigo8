@@ -1,0 +1,81 @@
+<div class="fondooscuro" [ngClass]="{'oculto': !_sProductos.abrir}">
+    <div class="modal" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true" style="display: block;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Editar un producto</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)= "_sProductos.abrir = false">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                        <form #formulariocrear="ngForm" (ngSubmit)="crearproducto(formulariocrear,Imagen)">
+                                <div class="form-group row">
+                                    <label class="col-3">Nombre</label>
+                                        <input type="text" class="form-control col-8"
+                                            [ngClass]="{'is-valid': nombre.valid,'is-invalid':!nombre.valid && nombre.dirty}"
+                                            placeholder="Nombre del producto" [ngModel]="_sProductos.productoEditar.nombre" #nombre="ngModel" name="nombre" required>
+                                            <small class="text-danger ml-2" *ngIf="!nombre.valid && nombre.dirty">El <strong>nombre</strong>
+                                                es obligatorio</small>
+                                            </div>
+                                    <div class="form-group row">
+                                        <label class="col-3">Codigo</label>
+                                        <input type="text" class="form-control col-8"
+                                        [ngClass]="{'is-valid': Codigo.valid,'is-invalid':!Codigo.valid && Codigo.dirty}"
+                                        placeholder="Codigo del producto" [ngModel]="_sProductos.productoEditar.codigo" #Codigo="ngModel" name="Codigo" required>
+                                        <small class="text-danger ml-2" *ngIf="!Codigo.valid && Codigo.dirty">El <strong>Codigo</strong>
+                                            es obligatorio</small>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-3">Precio</label>
+                                            <input type="text" class="form-control col-8"
+                                            [ngClass]="{'is-valid': Precio.valid,'is-invalid':!Precio.valid && Precio.dirty}"
+                                            placeholder="Precio del producto" [ngModel]="_sProductos.productoEditar.precio" #Precio="ngModel" name="Precio" required>
+                                            <small class="text-danger ml-2" *ngIf="!Precio.valid && Precio.dirty">El <strong>Precio</strong>
+                                                es obligatorio</small>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-3">Cantidad</label>
+                                        <input type="number" class="form-control col-8"
+                                        [ngClass]="{'is-valid': Cantidad.valid,'is-invalid':!Cantidad.valid && Cantidad.dirty}"
+                                        placeholder="Cantidad del producto" [ngModel]="_sProductos.productoEditar.cantidad" #Cantidad="ngModel" name="Cantidad" required>
+                                        <small class="text-danger ml-2" *ngIf="!Cantidad.valid && Cantidad.dirty">La
+                                            <strong>Cantidad</strong>
+                                            es obligatorio</small>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-2">Imagen</label>
+                                            <small class="text-danger ml-2 col-5" *ngIf="!Imagen.valid && Imagen.dirty">La
+                                                <strong>Imagen</strong>
+                                                es obligatorio</small>
+                                                <small class="text-danger ml-2 col-5" *ngIf="!Imagen.valid && Imagen?.errors.pattern">La
+                                                    <strong>URL</strong>
+                                            inicia con <strong>http://</strong><strong>https://</strong> </small>
+                                            <input type="text" class="form-control col-11 ml-3"
+                                            [ngClass]="{'is-valid': Imagen.valid,'is-invalid':!Imagen.valid && Imagen.dirty}"
+                                            placeholder="Imagen del producto" [ngModel]="_sProductos.productoEditar.imagen" #Imagen="ngModel" name="Imagen" required
+                                            pattern="http://(.+)|https://(.+)">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <button type="submit" class="btn btn-danger btn-block"
+                                            (click)="formulariocancelar(formulariocrear)">
+                                            Cancelar
+                                        </button>
+                                    </div>
+                                        <div class="col-md-6">
+                                            <button type="submit" class="btn btn-dark btn-block" [disabled]="!formulariocrear.valid">
+                                                Crear Producto
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

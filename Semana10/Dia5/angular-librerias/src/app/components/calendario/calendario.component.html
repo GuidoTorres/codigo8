@@ -1,0 +1,19 @@
+<main class="container-fluid">
+
+    
+    
+    <ejs-schedule #miCalendario (popupOpen)= "agregarEventoHtml($event)" height = "500px" [eventSettings]='eventSettings'></ejs-schedule>
+</main>
+
+<br><br>
+
+<div class="container">
+    <div class="row" #fila2 >
+        <div class="col-md-6">
+            <button class="btn btn-primary" (click)= "agregarEvento()">
+                Agregar Evento
+            </button>
+        </div>
+        <div class="col-md-6"></div>
+    </div>
+</div>

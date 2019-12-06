@@ -18,6 +18,10 @@ app = Flask(__name__)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://root:root@localhost/vehiculos" 
 
+app.config['SECRET_KEY'] = 'clave-secreta'
+
+jsonwebtoken = JWT(app, autenticacion, identificador)
+
 api = Api(app)
 
 #Creacion de mis tablas

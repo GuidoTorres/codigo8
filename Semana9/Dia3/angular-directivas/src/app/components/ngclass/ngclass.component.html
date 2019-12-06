@@ -1,0 +1,21 @@
+<main class="container">
+    <h2>Directiva <code>ngClass</code></h2>
+
+    <hr>
+
+    <p>La directiva <code>[ngClass]</code> sirve para asignar las directivas en las etiquetas html</p>
+
+    <p>A continuacion, una alerta normal</p>
+    <div class="alert alert-success"> Registro creado correctamente</div>
+
+    <p>A continucaion una alerta con<code>[ngClass]</code> [ngClass]</p>
+    <div [ngClass] = "'alert alert-danger'"> No se puede crear el registro</div>
+
+    <p>A continuacion, una clase que depende de una condicion</p>
+    <div>
+        <span [ngClass]="{'badge badge-success': inventario > 0, 'badge badge-danger': inventario <= 0}" >
+            Inventario
+        </span>
+    </div>
+
+</main>

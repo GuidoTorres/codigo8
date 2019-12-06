@@ -7,7 +7,7 @@ class VehiculoModel(db.Model):
     modelo=db.Column("modelo_vehiculo",db.String(50))
 
     
-     Se crea la realcion de uno a muchos
+    #  Se crea la realcion de uno a muchos
     cat_id = db.Column(db.Integer, db.ForeignKey('t_categoria.cat_id'), nullable=False)
     categoria = db.relationship('CategoriaModel')
 

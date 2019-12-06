@@ -1,0 +1,11 @@
+<main class="container">
+    <div class="alert" [ngClass]="tipoAlerta" >
+      Texto del alert
+    </div>
+    <button class="btn btn-success" (click)="tipoAlerta = 'alert-success'">Click Success</button>
+    <button class="btn btn-secondary" (click)="tipoAlerta = 'alert-warning'">Click Warning</button>
+
+    <hr>
+    <button class="btn btn-danger" (click)="cambiarDanger()">Click Danger</button >
+    <button class="btn btn-primary" (click)="cambiarPrimary()">Click primary</button>
+</main>
