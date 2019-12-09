@@ -1,0 +1,17 @@
+npm init
+npm start
+
+
+
+nodemon => libreira para escuchar cambios en tiempo real => npm install nodemon -g
+
+
+tsc --init => creacion de typescript 
+
+npm install express
+
+npm i -D @types/express => definiciones en ts para los tipos de datos internos de la libreia [paquete]
+en este caso express
+
+
+npm install body-parser
